@@ -1,38 +1,214 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.logo {
   text-align: center;
+  margin: 50px;
+  margin-top: 150px;
+  letter-spacing: 0.5rem;
+  line-height: 2.6rem;
+  color: var(--color-dark-grayish-cyan);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body,
+input,
+button {
+  font-family: var(--font-family);
+}
+body {
+  background-color: var(--color-bg);
+}
+.show-info {
+  background-color: var(--color-dark-cyan);
+  width: 50%;
+  margin-right: 35px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  padding-top: 1.5rem;
+}
+
+.show-info label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-info h4 {
+  color: var(--color-lightest-cyan);
+  margin: 0px;
+  font-weight: 400;
+  line-height: 1rem;
+}
+.show-info h2 {
+  color: var(--color-strong-cyan);
+  font-size: 2.5rem;
+}
+.show-info span {
+  color: var(--color-grayish-cyan);
+  font-size: 0.8rem;
+}
+.fill-info {
+  width: 50%;
+  margin: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.fill-info input.fill-input {
+  width: 100%;
+  height: 38px;
+  text-align: right;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-right: 15px;
+  border: none;
+  background-color: var(--color-lightest-cyan);
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--color-grayish-cyan);
+}
+.fill-info input.fill-input:focus {
+  outline: 2px solid var(--color-strong-cyan);
+}
+
+.select-tip {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fill-info h4 {
+  color: var(--color-dark-grayish-cyan);
+  margin-bottom: 0.25rem;
+}
+
+.mt2 {
+  margin-top: 20px;
+}
+input.customTipInput {
+  text-align: right;
+  padding-right: 15px;
+}
+.customTipInput {
+  width: 100px;
+  height: 40px;
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+  /* text-align: right; */
+  background-color: var(--color-lightest-cyan);
+  cursor: pointer;
+  color: var(--color-dark-cyan);
+  border: 1px solid var(--color-strong-cyan);
+}
+.customTipInput:focus {
+  border: 2px solid var(--color-strong-cyan);
+}
+
+button {
+  width: 100px;
+  margin-bottom: 15px;
+  height: 40px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-white);
+  cursor: pointer;
+}
+.fill-info button {
+  background-color: var(--color-dark-cyan);
+  /* margin: 0px 10px 10px 0px; */
+}
+button:focus,
+button:hover,
+button:visited,
+button:focus-visible {
+  background-color: var(--color-strong-cyan);
+}
+button.reset {
+  width: 100%;
+  margin-top: 100px;
+  background-color: var(--color-dark-grayish-cyan);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+button.reset:hover {
+  background-color: var(--color-strong-cyan);
+  color: var(--color-dark-cyan);
+}
+
+button,
+.customTipInput {
+  text-align: center;
+  /* padding: 2px; */
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+
+.calculator-container {
+  padding: 30px 15px;
+  background-color: var(--color-calculator);
+  border-radius: 20px;
+  /* margin: 20px; */
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  vertical-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  /* margin-top: 30vh; */
 }
 
-.App-link {
-  color: #61dafb;
+::placeholder {
+  color: var(--color-grayish-cyan);
+  opacity: 1; /* Firefox */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-grayish-cyan);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--color-grayish-cyan);
+}
+::placeholder {
+  color: var(--color-grayish-cyan);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-grayish-cyan);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: red;
 }

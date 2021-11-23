@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --font-family: "Space Mono", monospace;
+
+  /* --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%); */
+  /* --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%); */
+
+  --color-bg: hsl(185, 41%, 84%);
+  --color-calculator: hsl(0, 0%, 100%);
+  --color-dark-cyan: hsl(183, 100%, 15%);
+  --color-strong-cyan: hsl(172, 67%, 45%);
+  --color-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --color-grayish-cyan: hsl(184, 14%, 56%);
+  --color-light-cyan: hsl(185, 41%, 84%);
+  --color-lightest-cyan: hsl(189, 41%, 97%);
+  --color-white: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Light grayish cyan: hsl(189, 41%, 97%)
+
+## Typography
+
+### Body Copy
+
+- Font size (form inputs): 24px
+
+### Font
+
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 400, 500, 700 */
